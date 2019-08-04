@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.game {
+	height: 100vh;
+	background-color: #ddd;
+	font-family: monospace;
+	border: 2px solid black;
+}
+
+.lives {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	transition: 2s ease 1s;
+
+}
+
+.home {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	transition: 2s ease 1s;
+
+}
+
+.scoreBoard {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	transition: 2s ease 1s;
+	margin-top: 15px;
+}
+
+.scoreBoard p {
+	font-size: 20px;
+	padding: 10px;
+	
+}
+
+
+.intro {
+	height: 27vh;
+	align-items: center;
+	justify-content: space-around;
+	display: flex;
+	flex-direction: column;
+	transition: 2s ease;
+
+}
+
+.intro h2 {
+	font-size: 40px;
+	margin-top: 300px;
+	margin-bottom: 100px;
+}
+
+.intro button, .home button{
+	width: 120px;
+	height: 40px;
+	background:none;
+	border: none;
+	color: 	white;
+	background-color: brown;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 25px;
+}
+
+.tuts {
+	position: absolute;
+	top: 50%;
+	left: 41%;
+	transition: 2s ease 1.5s;
+}
+
+.tuts img {
+	width: 250px;
+}
+
+.border {
+	margin: 10px;
+	border: 6px solid black;
+	border-radius: 10px;
+	opacity: 1;
+	top: -25%;
+	position: relative;
+	transition: 2s ease 1s;
+
+}
+
+.tiles {
+	height: 80vh;
+	line-height: 2px;
+	font-size: 5px;
+}
+
+.tiles img {
+	width: 128px;
+	height: 35px;
+}
+
+
+.ball {
+	bottom: 16px;
+	left: 628px;
+	position: absolute;
+}
+
+.tile {
+	bottom: -3px;
+	left: 592px;
+	position: absolute;
+}
+
+.ball img{
+	width: 50px; 
+	height: 40px;
+}
+
+.tile img{
+	width: 120px; 
+	height: 20px;
+}
+
+div.fadeOut {
+	opacity: 0;
+	pointer-events: none;
+}
+
+div.fadeIn {
+	opacity: 1;
+	pointer-events: all;
+}
